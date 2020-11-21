@@ -8,8 +8,28 @@
 </head>
 <body>
     <div class="header">
-        <h1>Pokémon Pokédex</h1>
+        <img src="./image/Pokemon-Logo.png"  width="150px"  >
+        <div class="topnav">
+            <a href="./home.html" target="_blank">Home</a>
+            <a class="active" href="./pokedex.html" target="_blank">Pokedex</a>
+            <div class="dropdown">
+                <a class="dropbtn">Pokemon</a>
+                <div class="dropdown-content">
+                  <a href="./pikachu-stats.html" target="_blank">Pikachu</a>
+                  <a href="./bulbasaur-stats.html" target="_blank">Bulbasaur</a>
+                  <a href="./charizard-stats.html" target="_blank">Charizard</a>
+                </div>
+              </div>
+        </div>
     </div>
+
+    <div id="mybox" class="box">
+        <div class="box-content">
+            <span id = "closebtn" class="close">&times;</span>
+            <h1>Welcome to The Pokemon Pokedex</h1>
+        </div>
+    </div>
+
     <div class="main">
         <div id="content1">
             <h1>Welcome to The Pokémon Pokédex!</h1>
@@ -22,14 +42,15 @@
         <div id="pokemonselect">
             <h1>Click the image below to access Pokémon stats</h1>
             <br>
-            <h1>Pikachu</h1>
-            <a href="./pikachu-stats.html" target="_blank"><img src="./image/pikachu.jpg" width="300px" height="300px"></a>
-            <h1>Bulbasaur</h1>
-            <a><img src="./image/bulbasaur.jpg" width="300px" height="300px"></a>
-            <h1>Charizard</h1>
-            <a><img src="./image/charizard.jpg  " width="300px" height="300px"></a>
+            <h1 class="pokemonName">Pikachu</h1>
+            <a href="./pikachu-stats.html" target="_blank"><img src="./image/pikachu.png" width="300px" height="300px"></a>
+            <h1 class="pokemonName">Bulbasaur</h1>
+            <a href="./bulbasaur-stats.html" target="_blank"><img src="./image/bulbasaur.png" width="300px" height="300px"></a>
+            <h1 class="pokemonName">Charizard</h1>
+            <a href="./charizard-stats.html" target="_blank"><img src="./image/charizard.png  " width="300px" height="300px"></a>
         </div>
     </div>
     
 </body>
+<script src = "./pokedexInteraction.js"></script>
 </html>

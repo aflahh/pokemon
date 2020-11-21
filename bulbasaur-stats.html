@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BULBASAUR</title>  
+        <link rel="stylesheet" href="./pokemonStats-style.css" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Bulbasaur Pokédex</h1>
+        </div>
+
+        <div id="mybox" class="box">
+            <div class="box-content">
+                <span id = "closebtn" class="close">&times;</span>
+                <img src="./image/bulbasaur.png" width="300px" height="300px">
+                <h1>Bulbasaur</h1>
+            </div>
+        </div>
+
+        <div class = "main">
+            <img class="pokeImage" id="ImagePoke" src="./image/bulbasaur.png" width="300px" height="300px">
+            <div id="content1">
+                <h1>Bulbasaur</h1>
+                <p id="desc">Bulbasaur is a Grass/Poison type Pokémon introduced in Generation 1. It is known as the "Seed Pokémon".</p>
+            </div>
+            
+            <div id="content2">
+                <h1>Pokédex data</h1>
+                <table id = "tablepokedex">
+                    <tbody>
+                        <tr>
+                            <th>National №</th>
+                            <td>
+                                <strong>001</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td style="background: linear-gradient(to bottom, #00cc00 0%, #990099 100%);">Grass Poison</td>
+                        </tr>
+                        <tr>
+                            <th>Species</th>
+                            <td>Seed Pokémon</td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td>0.7 m (2′04″)</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>6.9 kg (15.2 lbs)</td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            <td>Overgrow <br>Clorophyl</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h1 style="position: absolute; top: 340px; right: 540px;">Base Stat</h1>
+                <h3 style="position: absolute; top: 360px; right: 255px;">Min</h3>
+                <h3 style="position: absolute; top: 360px; right: 205px;">Max</h3>
+                <table>
+                    <tbody style="position: absolute    ; top: 390px; right : 200px">
+                        <tr>
+                            <th>HP</th>
+                            <td class = "cell-num">45</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 45%;"></div>
+                            </td>
+                            <td class = "cell-num">200</td>
+                            <td class = "cell-num">294</td>
+                        </tr>
+                        <tr>
+                            <th>ATK</th>
+                            <td class = "cell-num">49</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 49%;"></div>
+                            </td>
+                            <td class = "cell-num">92</td>
+                            <td class = "cell-num">216</td>
+                        </tr>
+                        <tr>
+                            <th>DEF</th>
+                            <td class = "cell-num">49</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 49%;"></div>
+                            </td>
+                            <td class = "cell-num">92</td>
+                            <td class = "cell-num">216</td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 59%;">SP ATK</th>
+                            <td class = "cell-num">65</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 65%;"></div>
+                            </td>
+                            <td class = "cell-num">121</td>
+                            <td class = "cell-num">251</td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 59%;">SP DEF</th>
+                            <td class = "cell-num">65</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 65%;"></div>
+                            </td>
+                            <td class = "cell-num">121</td>
+                            <td class = "cell-num">251</td>
+                        </tr>
+                        <tr>
+                            <th >SPEED</th>
+                            <td class = "cell-num">45</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 45%;"></div>
+                            </td>
+                            <td class = "cell-num">85</td>
+                            <td class = "cell-num">207</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+    </body>
+    <script src = "./pokeStatsInteraction.js"></script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHARIZARD</title>  
+        <link rel="stylesheet" href="./pokemonStats-style.css" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Charizard Pokédex</h1>
+        </div>
+
+        <div id="mybox" class="box">
+            <div class="box-content">
+                <span id = "closebtn" class="close">&times;</span>
+                <img src="./image/charizard.png" width="300px" height="300px">
+                <h1>Charizard</h1>
+            </div>
+        </div>
+
+        <div class = "main">
+            <img class="pokeImage" id="ImagePoke" src="./image/charizard.png" width="300px" height="300px">
+            <div id="content1">
+                <h1>Charizard</h1>
+                <p id="desc">Charizard is a Fire/Flying type Pokémon introduced in Generation 1. It is known as the "Flame Pokémon".<br><br>Charizard has two Mega Evolutions, available from X & Y onwards.</p>
+            </div>
+            
+            <div id="content2">
+                <h1>Pokédex data</h1>
+                <table id = "tablepokedex">
+                    <tbody>
+                        <tr>
+                            <th>National №</th>
+                            <td>
+                                <strong>006</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td style="background: linear-gradient(to bottom, #ff0000 0%, #99ccff 100%);">Fire Flying</td>
+                        </tr>
+                        <tr>
+                            <th>Species</th>
+                            <td>Flame Pokémon</td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td>1.7 m (5′07″)</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>90.5 kg (199.5 lbs)</td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            <td>Blaze <br>Solar Power</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h1 style="position: absolute; top: 385px; right: 540px;">Base Stat</h1>
+                <h3 style="position: absolute; top: 405px; right: 255px;">Min</h3>
+                <h3 style="position: absolute; top: 405px; right: 205px;">Max</h3>
+                <table>
+                    <tbody style="position: absolute; top: 435px; right : 200px">
+                        <tr>
+                            <th>HP</th>
+                            <td class = "cell-num">78</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 78%;"></div>
+                            </td>
+                            <td class = "cell-num">266</td>
+                            <td class = "cell-num">360</td>
+                        </tr>
+                        <tr>
+                            <th>ATK</th>
+                            <td class = "cell-num">84</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 84%;"></div>
+                            </td>
+                            <td class = "cell-num">155</td>
+                            <td class = "cell-num">293</td>
+                        </tr>
+                        <tr>
+                            <th>DEF</th>
+                            <td class = "cell-num">78</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 78%;"></div>
+                            </td>
+                            <td class = "cell-num">144</td>
+                            <td class = "cell-num">280</td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 59%;">SP ATK</th>
+                            <td class = "cell-num">109</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 105%;"></div>
+                            </td>
+                            <td class = "cell-num">200</td>
+                            <td class = "cell-num">348</td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 59%;">SP DEF</th>
+                            <td class = "cell-num">85</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 85%;"></div>
+                            </td>
+                            <td class = "cell-num">157</td>
+                            <td class = "cell-num">295</td>
+                        </tr>
+                        <tr>
+                            <th >SPEED</th>
+                            <td class = "cell-num">100</td>
+                            <td style="width : 100%; min-width: 300px;">
+                                <div class = "cell-barchart" style="width: 100%;"></div>
+                            </td>
+                            <td class = "cell-num">184</td>
+                            <td class = "cell-num">328</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+    </body>
+    <script src = "./pokeStatsInteraction.js"></script>
+</html>

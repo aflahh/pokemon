@@ -1,5 +1,5 @@
 document.getElementById("link").addEventListener("click", function(){
-    this.style.color = "#eb2907";
+    this.style.color = "#14274e";
 })
 
 document.getElementById("closebtn").addEventListener("click", function(){

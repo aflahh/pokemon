@@ -4,24 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIKACHU</title>
-    <link rel="stylesheet" href="./pikachu-style.css" type="text/css">
+    <link rel="stylesheet" href="./pokemonStats-style.css" type="text/css">
 </head>
 <body>
     <div class="header">
         <h1>Pikachu Pokédex</h1>
     </div>
+
+    <div id="mybox" class="box">
+        <div class="box-content">
+            <span id = "closebtn" class="close">&times;</span>
+            <img src="./image/pikachu.png" width="300px" height="300px">
+            <h1>Pikachu</h1>
+        </div>
+    </div>
+
     <div class="main">
-        
-        <img src="./image/pikachu.jpg" width="300px" height="300px">
+        <img class="pokeImage" id="ImagePoke" src="./image/pikachu.png" width="300px" height="300px">
         <div id="content1">
             <h1>Pikachu</h1>
-            <p id="pikachu">Pikachu is an Electric type Pokémon introduced in Generation 1. It is known as the Mouse Pokémon.</p>
+            <p id="desc">Pikachu is an Electric type Pokémon introduced in Generation 1. It is known as the Mouse Pokémon.</p>
         </div>
         
         <div id="content2">
             <h1>Pokédex data</h1>
+            <table id = "tablepokedex">
+                <tbody>
+                    <tr>
+                        <th>National №</th>
+                        <td>
+                            <strong>025</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td style="background:yellow; color:black;">Electric</td>
+                    </tr>
+                    <tr>
+                        <th>Species</th>
+                        <td>Mouse Pokémon</td>
+                    </tr>
+                    <tr>
+                        <th>Height</th>
+                        <td>0.4 m (1′04″)</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>6.0 kg (13.2 lbs)</td>
+                    </tr>
+                    <tr>
+                        <th>Abilities</th>
+                        <td>Static<br>Lightning Rod</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1 style="position: absolute; top: 340px; right: 540px;">Base Stat</h1>
+            <h3 style="position: absolute; top: 360px; right: 255px;">Min</h3>
+            <h3 style="position: absolute; top: 360px; right: 205px;">Max</h3>
+            <table>
+                <tbody style="position: absolute    ; top: 390px; right : 200px">
+                    <tr>
+                        <th>HP</th>
+                        <td class = "cell-num">35</td>
+                        <td style="width : 100%; min-width: 300px;">
+                            <div class = "cell-barchart" style="width: 35%;"></div>
+                        </td>
+                        <td class = "cell-num">180</td>
+                        <td class = "cell-num">274</td>
+                    </tr>
+                    <tr>
+                        <th>ATK</th>
+                        <td class = "cell-num">55</td>
+                        <td style="width : 100%; min-width: 300px;">
+                            <div class = "cell-barchart" style="width: 55%;"></div>
+                        </td>
+                        <td class = "cell-num">103</td>
+                        <td class = "cell-num">229</td>
+                    </tr>
+                    <tr>
+                        <th>DEF</th>
+                        <td class = "cell-num">40</td>
+                        <td style="width : 100%; min-width: 300px;">
+                            <div class = "cell-barchart" style="width: 40%;"></div>
+                        </td>
+                        <td class = "cell-num">76</td>
+                        <td class = "cell-num">196</td>
+                    </tr>
+                    <tr>
+                        <th style="font-size: 59%;">SP ATK</th>
+                        <td class = "cell-num">50</td>
+                        <td style="width : 100%; min-width: 300px;">
+                            <div class = "cell-barchart" style="width: 50%;"></div>
+                        </td>
+                        <td class = "cell-num">94</td>
+                        <td class = "cell-num">218</td>
+                    </tr>
+                    <tr>
+                        <th style="font-size: 59%;">SP DEF</th>
+                        <td class = "cell-num">50</td>
+                        <td style="width : 100%; min-width: 300px;">
+                            <div class = "cell-barchart" style="width: 50%;"></div>
+                        </td>
+                        <td class = "cell-num">94</td>
+                        <td class = "cell-num">218</td>
+                    </tr>
+                    <tr>
+                        <th >SPEED</th>
+                        <td class = "cell-num">90</td>
+                        <td style="width : 100%; min-width: 300px;">
+                            <div class = "cell-barchart" style="width: 90%;"></div>
+                        </td>
+                        <td class = "cell-num">166</td>
+                        <td class = "cell-num">306</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     
 </body>
+<script src = "./pokeStatsInteraction.js"></script>
 </html>
